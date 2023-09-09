@@ -53,15 +53,18 @@ for i in last:
     break
 
 
-# This finds the body density based on the person's gender using the Pollock equations and indexing the values from the value list
+# This finds the body density based on the person's gender using the Pollock equations and popping the values from the value list
 if gender == "m": 
   body_density = 1.0990750 - (0.0008209*values_lst[0]) 
-  body_density += 0.00000262 - (0.0002017*values_lst[1]) - (0.005675*values_lst[2]) 
-  body_density += (0.018586*values_lst[3])
+  body_density += (0.00000262*((values_lst.pop(0)**2))) 
+  body_density -= (0.0002017*values_lst.pop(0)) 
+  body_density -= (0.005675*values_lst.pop(0)) 
+  body_density += (0.018586*values_lst.pop(0))
 else:
   body_density = 1.1470292 - (0.0009376*values_lst[0])
-  body_density += (0.0000030*values_lst[0]) 
-  body_density -= (0.0001156*values_lst[1]) - (0.0005839*values_lst[2])
+  body_density += ((0.0000030*(values_lst.pop(0)**2))) 
+  body_density -= (0.0001156*values_lst.pop(0)) 
+  body_density -= (0.0005839*values_lst.pop(0))
 
 
 #Print statements with both the body density and body fat percentage

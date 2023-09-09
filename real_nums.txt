@@ -1,0 +1,16 @@
+These are just some realistic values for each measurement:
+
+Taken from: https://www.researchgate.net/figure/SKF-measurements-in-mm-and-BF-for-the-male-and-female-testees_tbl1_234237974
+
+Womens:
+Triceps: 17mm
+Thigh: 19mm
+Suprailiac: 16mm
+Gluteal circumference: 89cm
+
+Men:
+Chest: 4mm
+Abdomen: 6mm
+Thigh: 5mm
+Waist: 1m
+Forearm: 0.3m
